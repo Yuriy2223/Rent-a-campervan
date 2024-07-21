@@ -1,0 +1,21 @@
+.wrapper {
+  background: #fff;
+  height: 94.1vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://ftp.goit.study/img/campers-test-task/1-1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  font-size: 60px;
+  width: 1000px;
+}
+
+.company {
+  color: #e44848;
+}

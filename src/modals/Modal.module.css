@@ -1,0 +1,131 @@
+.modalWrapper {
+  background: rgba(17, 18, 19, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.modalContent {
+  border-radius: 20px;
+  padding: 40px;
+  width: 982px;
+  max-height: 90vh;
+  background: #fff;
+  margin: 40px auto;
+  overflow-y: auto;
+}
+
+.hederModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+.closeBtn {
+  border: transparent;
+  background: transparent;
+  transition: all 250ms ease-in-out;
+}
+
+.close {
+  stroke: var(--main);
+}
+
+.rateLocation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 16px;
+  text-decoration-skip-ink: none;
+  color: var(--main);
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.svgStar {
+  margin-right: 4px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.svgMap {
+  margin-right: 4px;
+  fill: #fff;
+  stroke: var(--main);
+}
+
+.number {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.imgBox {
+  border-radius: 10px;
+  width: 290px;
+  height: 310px;
+  background-color: #eff0f1;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text);
+  margin-top: 24px;
+}
+
+.nav {
+  margin-top: 44px;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.link {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+  padding-bottom: 24px;
+  border-bottom: 5px solid transparent;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+}
+
+.active {
+  border-bottom-color: var(--button);
+}

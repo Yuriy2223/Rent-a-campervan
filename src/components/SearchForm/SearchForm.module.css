@@ -1,0 +1,22 @@
+.searchForm {
+  width: 360px;
+}
+
+.btnSearch {
+  border-radius: 200px;
+  padding: 16px 60px;
+  background: var(--button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border: none;
+  transition: all 250ms ease-in-out;
+  margin-top: 64px;
+}
+
+.btnSearch:hover,
+.btnSearch:focus {
+  background: #d84343;
+}

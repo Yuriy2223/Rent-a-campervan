@@ -1,0 +1,18 @@
+.featuresComponent {
+  border-radius: 100px;
+  padding: 12px 18px;
+  background: var(--block-features);
+  mix-blend-mode: multiply;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+  display: flex;
+  align-items: center;
+}
+
+.svgComponent {
+  margin-right: 8px;
+  fill: #fff;
+  stroke: var(--main);
+}

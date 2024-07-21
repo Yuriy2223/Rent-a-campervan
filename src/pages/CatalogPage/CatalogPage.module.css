@@ -1,0 +1,9 @@
+.wrapper {
+  background: #fff;
+  width: 1440px;
+  padding: 40px 65px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 97px;
+}

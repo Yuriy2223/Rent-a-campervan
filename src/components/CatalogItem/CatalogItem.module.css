@@ -1,0 +1,138 @@
+.container {
+  width: 840px;
+  height: 310px;
+  display: flex;
+  gap: 24px;
+}
+
+.containerImg {
+  border-radius: 10px;
+  width: 290px;
+  height: 310px;
+  background-color: var(--block-features);
+}
+
+.containerContents {
+  width: 526px;
+  height: 310px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title,
+.titleContent {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 350px;
+}
+
+.titleContent {
+  display: flex;
+  align-items: center;
+}
+
+.addFavorite {
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin-left: 10px;
+}
+
+.svgHeard {
+  fill: #fff;
+  stroke: var(--main);
+  transition: all 250ms ease-in-out;
+}
+
+.svgHeard:hover {
+  fill: var(--button);
+  stroke: var(--button);
+}
+
+.svgHeartActive {
+  fill: var(--button);
+  stroke: var(--button);
+}
+
+.rateLocation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 16px;
+  text-decoration-skip-ink: none;
+  color: var(--main);
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.svgStar {
+  margin-right: 4px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.svgMap {
+  margin-right: 4px;
+  fill: #fff;
+  stroke: var(--main);
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 16px;
+  color: var(--text);
+  margin-top: 24px;
+}
+
+.features {
+  width: 526px;
+  height: 96px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.button {
+  border-radius: 200px;
+  padding: 16px 40px;
+  background: var(--button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 24px;
+  transition: all 250ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background: #d84343;
+}

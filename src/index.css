@@ -5,10 +5,11 @@
   --block-features: #f2f4f7;
   --rating: #ffc531;
   --text: #475467;
+  --font-family: "Inter", sans-serif;
 }
 
-a {
-  text-decoration: none;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -16,15 +17,42 @@ body {
   line-height: 1.5;
   font-weight: 400;
   margin: 0;
+  background: #fff;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 button {
   font-family: inherit;
   cursor: pointer;
+  display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-family: inherit;
+}
