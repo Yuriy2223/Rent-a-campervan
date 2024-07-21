@@ -16,4 +16,4 @@ Home: Consider that this could be the first step to wanting to take a campervan 
 Catalog of campers: A page where you can view all available campers, with the possibility of filtering. Find the right one for your next big adventure.
 Favorites: Because everyone has the right to their little dreams and lists of favorites.
 
-Deploy: The project is already available for viewing. So, sit back and enjoy viewing our luxury camper vans!
+The project is already available for viewing. So, sit back and enjoy viewing our luxury camper vans!
