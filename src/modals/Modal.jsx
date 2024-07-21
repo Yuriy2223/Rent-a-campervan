@@ -64,7 +64,7 @@ const Modal = ({ closeModal, camper }) => {
         <p className={css.description}>{camper.description}</p>
         <nav className={css.nav}>
           <NavLink
-            to="/catalog"
+            to="/"
             className={({ isActive }) =>
               isActive ? `${css.link} ${css.active}` : css.link
             }
@@ -72,7 +72,7 @@ const Modal = ({ closeModal, camper }) => {
             Features
           </NavLink>
           <NavLink
-            to="favorites"
+            to="/"
             className={({ isActive }) =>
               isActive ? `${css.link} ${css.active}` : css.link
             }

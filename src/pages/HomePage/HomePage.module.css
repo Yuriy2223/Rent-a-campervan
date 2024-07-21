@@ -1,6 +1,6 @@
 .wrapper {
   background: #fff;
-  height: 94.1vh;
+  height:calc(100vh - 75px) ;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
 
 .home {
   font-size: 60px;
-  width: 1000px;
+  max-width:  1000px;
 }
 
 .company {
