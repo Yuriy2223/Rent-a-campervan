@@ -1,111 +1,77 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  NavLink,
-  Outlet,
-} from "react-router-dom";
+import { useState } from "react";
 import ReactDOM from "react-dom";
-import Features from "./Features";
-import Reviews from "./Reviews";
-import css from "./Modal.module.css";
 import Icons from "../components/Icons/Icons";
+import Features from "../components/Features/Features";
+import Reviews from "../components/Reviews/Reviews";
+import RateLocation from "../components/RateLocation/RateLocation";
+import css from "./Modal.module.css";
 
 const Modal = ({ closeModal, camper }) => {
+  const [activeTab, setActiveTab] = useState(null);
+
   return ReactDOM.createPortal(
-    <Router>
-      <div className={css.modalWrapper} onClick={closeModal}>
-        <div className={css.modalContent} onClick={(e) => e.stopPropagation()}>
-          <div className={css.hederModal}>
-            <h2 className={css.title}>{camper.name}</h2>
-            <button
-              className={css.closeBtn}
-              onClick={(e) => {
-                e.stopPropagation();
-                closeModal();
-              }}
-            >
-              <Icons
-                width={32}
-                height={32}
-                iconName="close"
-                className={css.close}
-              />
-            </button>
-          </div>
-          <div className={css.rateLocation}>
-            <div className={css.rate}>
-              <Icons
-                width={16}
-                height={16}
-                iconName="star"
-                className={css.svgStar}
-              />
-              {camper.rating}({camper.reviews.length} Reviews)
-            </div>
-            <div className={css.location}>
-              <Icons
-                width={20}
-                height={20}
-                iconName="map"
-                className={css.svgMap}
-              />
-              {camper.location}
-            </div>
-          </div>
-          <p className={css.number}>€{camper.price}.00</p>
-          <div className={css.imgContainer}>
+    <div className={css.modalWrapper} onClick={closeModal}>
+      <div className={css.modalContent} onClick={(e) => e.stopPropagation()}>
+        <div className={css.headerModal}>
+          <h2 className={css.title}>{camper.name}</h2>
+          <button
+            className={css.closeBtn}
+            onClick={(e) => {
+              e.stopPropagation();
+              closeModal();
+            }}
+          >
+            <Icons
+              width={32}
+              height={32}
+              iconName="close"
+              className={css.close}
+            />
+          </button>
+        </div>
+        <RateLocation
+          rating={camper.rating}
+          reviews={camper.reviews}
+          location={camper.location}
+        />
+        <p className={css.number}>€{camper.price}.00</p>
+        <div className={css.imgContainer}>
+          {camper.gallery.map((image, index) => (
             <img
+              key={index}
               className={css.imgBox}
-              src={camper.gallery[0]}
+              src={image}
               alt={camper.name}
             />
-            <img
-              className={css.imgBox}
-              src={camper.gallery[1]}
-              alt={camper.name}
-            />
-            <img
-              className={css.imgBox}
-              src={camper.gallery[2]}
-              alt={camper.name}
-            />
-          </div>
-          <p className={css.description}>{camper.description}</p>
-          <nav className={css.nav}>
-            <NavLink
-              to="features"
-              className={({ isActive }) =>
-                isActive ? `${css.link} ${css.active}` : css.link
-              }
-            >
-              Features
-            </NavLink>
-            <NavLink
-              to="reviews"
-              className={({ isActive }) =>
-                isActive ? `${css.link} ${css.active}` : css.link
-              }
-            >
-              Reviews
-            </NavLink>
-          </nav>
-          <Outlet context={{ camper }} />
+          ))}
+        </div>
+        <p className={css.description}>{camper.description}</p>
+        <div className={css.tabs}>
+          <button
+            className={`${css.tabButton} ${
+              activeTab === "features" ? css.activeTab : ""
+            }`}
+            onClick={() => setActiveTab("features")}
+          >
+            Features
+          </button>
+          <button
+            className={`${css.tabButton} ${
+              activeTab === "reviews" ? css.activeTab : ""
+            }`}
+            onClick={() => setActiveTab("reviews")}
+          >
+            Reviews
+          </button>
+        </div>
+        <div className={css.tabContent}>
+          {activeTab === "features" && <Features camper={camper} />}
+          {activeTab === "reviews" && <Reviews camper={camper} />}
         </div>
       </div>
-      <Routes>
-        <Route
-          path="/"
-          element={<Modal closeModal={closeModal} camper={camper} />}
-        >
-          <Route path="features" element={<Features camper={camper} />} />
-          <Route path="reviews" element={<Reviews camper={camper} />} />
-        </Route>
-      </Routes>
-    </Router>,
+    </div>,
     document.body
   );
 };
 
 export default Modal;
-

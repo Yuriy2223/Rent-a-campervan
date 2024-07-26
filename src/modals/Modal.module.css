@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 1;
 }
@@ -15,13 +15,13 @@
   border-radius: 20px;
   padding: 40px;
   width: 982px;
-  max-height: 90vh;
+  max-height: 83vh;
   background: #fff;
   margin: 40px auto;
   overflow-y: auto;
 }
 
-.hederModal {
+.headerModal {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +32,7 @@
   font-size: 24px;
   line-height: 1.25;
   color: var(--main);
+  display: inline-block;
 }
 
 .closeBtn {
@@ -103,29 +104,34 @@
   margin-top: 24px;
 }
 
-.nav {
+.tabs {
   margin-top: 44px;
   border-bottom: 1px solid rgba(16, 24, 40, 0.2);
   display: flex;
   align-items: center;
   gap: 40px;
-}
-
-.link {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--main);
   padding-bottom: 24px;
-  border-bottom: 5px solid transparent;
+}
 
-  font-family: var(--font-family);
+.tabButton,
+.activeTab {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   color: var(--main);
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
 }
 
-.active {
-  border-bottom-color: var(--button);
+.activeTab::before {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--button);
 }

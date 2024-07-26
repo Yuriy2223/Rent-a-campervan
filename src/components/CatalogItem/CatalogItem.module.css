@@ -1,6 +1,4 @@
 .container {
-  width: 840px;
-  height: 310px;
   display: flex;
   gap: 24px;
 }
@@ -17,14 +15,14 @@
   height: 310px;
 }
 
-.box {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .title,
-.titleContent {
+.headerContent {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.25;
@@ -38,7 +36,7 @@
   width: 350px;
 }
 
-.titleContent {
+.headerContent {
   display: flex;
   align-items: center;
 }
@@ -50,13 +48,13 @@
   margin-left: 10px;
 }
 
-.svgHeard {
+.svgHeart {
   fill: #fff;
   stroke: var(--main);
   transition: all 250ms ease-in-out;
 }
 
-.svgHeard:hover {
+.svgHeart:hover {
   fill: var(--button);
   stroke: var(--button);
 }
@@ -64,37 +62,6 @@
 .svgHeartActive {
   fill: var(--button);
   stroke: var(--button);
-}
-
-.rateLocation {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 8px;
-  font-size: 16px;
-  text-decoration-skip-ink: none;
-  color: var(--main);
-}
-
-.rate {
-  display: flex;
-  align-items: center;
-  text-decoration: underline;
-}
-
-.svgStar {
-  margin-right: 4px;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-}
-
-.svgMap {
-  margin-right: 4px;
-  fill: #fff;
-  stroke: var(--main);
 }
 
 .description {
@@ -105,16 +72,6 @@
   font-size: 16px;
   color: var(--text);
   margin-top: 24px;
-}
-
-.features {
-  width: 526px;
-  height: 96px;
-  margin-top: 24px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
 }
 
 .button {

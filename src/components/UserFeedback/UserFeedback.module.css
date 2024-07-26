@@ -1,0 +1,70 @@
+.listContent {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background: var(--block-features);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--button);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 96px;
+  height: 44px;
+}
+
+.name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--main);
+}
+
+.ratingList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 96px;
+  height: 16px;
+}
+
+.starStart {
+  fill: var(--block-features);
+  stroke: var(--block-features);
+}
+
+.starActive {
+  fill: var(--rating);
+  stroke: var(--rating);
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+}

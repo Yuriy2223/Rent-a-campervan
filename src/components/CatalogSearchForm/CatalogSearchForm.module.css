@@ -2,7 +2,14 @@
   width: 360px;
 }
 
-.btnSearch {
+.containerBtn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.btnSearch,
+.btnReset {
   border-radius: 200px;
   padding: 16px 60px;
   background: var(--button);
@@ -13,10 +20,23 @@
   color: #fff;
   border: none;
   transition: all 250ms ease-in-out;
-  margin-top: 64px;
+}
+
+.btnReset {
+  padding: 16px 68px;
 }
 
 .btnSearch:hover,
-.btnSearch:focus {
+.btnSearch:focus,
+.btnReset:hover,
+.btnReset:focus {
   background: #d84343;
+}
+
+.error {
+  position: absolute;
+  left: 8px;
+  bottom: -18px;
+  color: red;
+  font-size: 12px;
 }

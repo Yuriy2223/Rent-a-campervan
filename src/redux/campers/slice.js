@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchCampers } from "./operations"; 
+import { fetchCampers } from "./operations";
 
 const initialState = {
   items: [],
@@ -37,5 +37,5 @@ const campersSlice = createSlice({
   },
 });
 
-export const { toggleFavorite } = campersSlice.actions; 
+export const { toggleFavorite } = campersSlice.actions;
 export const campersReducer = campersSlice.reducer;

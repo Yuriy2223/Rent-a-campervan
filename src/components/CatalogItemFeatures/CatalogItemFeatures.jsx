@@ -1,7 +1,7 @@
 import Icons from "../Icons/Icons";
-import css from "./CatalogFeaturesItem.module.css";
+import css from "./CatalogItemFeatures.module.css";
 
-const CatalogFeaturesItem = ({ label, value, iconName }) => {
+const CatalogFeaturesItem = ({ name, value, iconName }) => {
   return (
     <div className={css.featuresComponent}>
       <Icons
@@ -10,10 +10,9 @@ const CatalogFeaturesItem = ({ label, value, iconName }) => {
         iconName={iconName}
         className={css.svgComponent}
       />
-      {value} {label}
+      {value} {name}
     </div>
   );
 };
 
 export default CatalogFeaturesItem;
-

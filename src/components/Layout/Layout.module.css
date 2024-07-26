@@ -1,5 +1,11 @@
 .header {
   background-color: #f2f4f7;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .headerNav {
@@ -15,7 +21,7 @@
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
-  line-height: 125%;
+  line-height: 1.25;
   color: var(--main);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -24,4 +30,43 @@
 
 .activeNav {
   border-bottom-color: var(--button);
+}
+
+.wrapper {
+  background: #fff;
+}
+
+.btnToTop {
+  position: fixed;
+  bottom: 4vh;
+  right: 10vw;
+  background-color: var(--button);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 250ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btnToTopIcon {
+  fill: #fff;
+}
+
+.btnToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btnToTop:hover {
+  background-color: #d84343;
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }

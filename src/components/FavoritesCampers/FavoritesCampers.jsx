@@ -22,7 +22,7 @@ const FavoritesCampers = () => {
         </ul>
       ) : (
         <div className={css.message}>
-         Unfortunately, you have not added any campers to your favorites :(
+          Unfortunately, you have not added any campers to your favorites :(
         </div>
       )}
     </>

@@ -35,14 +35,24 @@
   outline: none;
   border-radius: 10px;
   background: var(--inputs);
+  border: 1px solid transparent;
   transition: all 250ms ease-in-out;
 }
 
 .locationInput:hover,
 .locationInput:focus {
   color: var(--main);
+  border: 1px solid var(--button);
 }
 
 .locationInputHoverFocus .icon {
   stroke: var(--main);
+}
+
+.error {
+  position: absolute;
+  left: 8px;
+  bottom: -18px;
+  color: red;
+  font-size: 12px;
 }

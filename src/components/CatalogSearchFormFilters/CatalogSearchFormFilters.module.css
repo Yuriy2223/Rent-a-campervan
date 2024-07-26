@@ -2,31 +2,34 @@
   margin-top: 32px;
 }
 
-.title {
+.titleFilters {
   font-weight: 500;
   font-size: 16px;
   color: var(--text);
 }
 
-.subTitle {
+.subTitleFilters {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   color: var(--main);
   margin-top: 14px;
-  margin-bottom: 48px;
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(16, 24, 40, 0.1);
 }
 
-.list {
+.listFilters {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 24px;
+
+  list-style: none;
+  padding: 0;
 }
 
-.btn {
+.checkboxLabel {
   border: 1px solid rgba(16, 24, 40, 0.2);
   border-radius: 10px;
   padding: 17px 40px;
@@ -40,17 +43,19 @@
   transition: all 250ms ease-in-out;
 }
 
-.btn:hover,
-.btn:focus {
+.checkboxLabel:hover,
+.checkboxLabel:focus {
   border: 1px solid var(--button);
 }
 
-.icon {
-  fill: #fff;
-  stroke: var(--main);
-  margin-bottom: 8px;
+.checkboxLabel input {
+  display: none;
 }
 
-.btn.uselected {
+.checkboxLabel .iconFilter {
+  margin-bottom: 5px;
+}
+
+.checkboxLabel.selected {
   border: 1px solid red;
 }

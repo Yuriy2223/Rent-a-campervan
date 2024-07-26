@@ -12,39 +12,49 @@
 }
 
 .list {
-  margin-top: 48px;
+  margin-top: 24px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.btn,
-.btn2 {
+.radioLabel {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   border: 1px solid rgba(16, 24, 40, 0.2);
   border-radius: 10px;
-  padding: 22px 30px;
-  width: 100px;
+  padding: 17px 30px;
+  width: 113px;
   height: 95px;
   background-color: #fff;
   transition: all 250ms ease-in-out;
 }
 
-.icon {
-  margin-bottom: 5px;
-}
-
-.btn2 {
-  padding: 15px 30px;
-}
-
-.btn:hover,
-.btn2:hover {
+.radioLabel:hover,
+.radioLabel:focus {
   border: 1px solid var(--button);
 }
 
-.selected {
+.specialType {
+  padding: 15px 24px;
+}
+
+.radioLabel input {
+  display: none;
+}
+
+.radioLabel .iconRadio {
+  margin-bottom: 5px;
+}
+
+.radioLabel.selected {
   border: 1px solid red;
+}
+
+.specialSpanTypeLabel {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
 }

@@ -28,7 +28,6 @@ ol {
 }
 
 button {
-  font-family: inherit;
   cursor: pointer;
   display: block;
 }
@@ -48,11 +47,15 @@ p {
 }
 
 img {
-  display: block;
-  width: 100%;
-  height: auto;
+  /* display: block; */
+  /* width: 100%; */
+  /* height: auto; */
+  object-fit: cover;
 }
 
-input {
+input,
+button,
+a {
   font-family: inherit;
 }
+

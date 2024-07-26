@@ -1,0 +1,94 @@
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+}
+
+.text {
+  font-size: 16px;
+  color: var(--text);
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.input,
+.dateInput,
+.inputComment {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(16, 24, 40, 0.6);
+  background: var(--inputs);
+  border-radius: 10px;
+  padding: 18px;
+  width: 400px;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.input,
+.dateInput {
+  margin-bottom: 14px;
+}
+
+.inputComment {
+  height: 114px;
+  overflow: auto;
+}
+
+.input:hover,
+.inputComment:hover,
+.inputComment:focus,
+.input:focus {
+  color: var(--main);
+}
+
+.dateInputWrapper {
+  width: 100%;
+}
+
+.dateInput {
+  padding-right: 40px;
+}
+
+.calendarBtn {
+  position: absolute;
+  right: 10px;
+  top: 44%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.calendarIcon {
+  pointer-events: none;
+  fill: #fff;
+  stroke: var(--main);
+}
+
+.button {
+  border-radius: 200px;
+  padding: 16px 60px;
+  background: var(--button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-top: 24px;
+  border: none;
+  transition: all 250ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #d84343;
+}
+
+.relative {
+  position: relative;
+}

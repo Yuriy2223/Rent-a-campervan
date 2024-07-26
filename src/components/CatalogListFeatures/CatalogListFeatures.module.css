@@ -1,0 +1,9 @@
+.features {
+  width: 526px;
+  height: 96px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}

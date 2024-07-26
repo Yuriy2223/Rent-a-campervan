@@ -1,0 +1,31 @@
+.rateLocation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 16px;
+  text-decoration-skip-ink: none;
+  color: var(--main);
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.svgStar {
+  margin-right: 4px;
+  fill: var(--rating);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.svgMap {
+  margin-right: 4px;
+  fill: #fff;
+  stroke: var(--main);
+}

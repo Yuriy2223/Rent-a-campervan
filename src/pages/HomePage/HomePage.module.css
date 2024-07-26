@@ -1,11 +1,11 @@
 .wrapper {
   background: #fff;
-  height:calc(100vh - 75px) ;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  background-image: url("https://ftp.goit.study/img/campers-test-task/1-1.webp");
+  background-image: url("../../assets/img3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,9 +13,33 @@
 
 .home {
   font-size: 60px;
-  max-width:  1000px;
+  max-width: 1000px;
+  color: #fff;
 }
 
 .company {
   color: #e44848;
+}
+
+.btnHome {
+  display: block;
+  margin: 20px;
+  border-radius: 200px;
+  padding: 16px 60px;
+  background: var(--button);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition: all 250ms ease-in-out;
+}
+
+.btnHome:hover {
+  background-color: #d84343;
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
