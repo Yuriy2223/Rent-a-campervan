@@ -15,4 +15,9 @@
 
 .message {
   font-size: 40px;
+  line-height: 1.5;
+  margin-top: 80px;
+  width: 880px;
+  text-align: center;
 }
+

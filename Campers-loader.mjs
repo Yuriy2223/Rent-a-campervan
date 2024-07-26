@@ -31,3 +31,5 @@ const loadData = async () => {
 loadData();
 
 // для запуска node Campers-loader.mjs
+// https://mockapi.io/
+//https://www.figma.com/design/fnMWH0eBB7NnoqdAiiKWsQ/Test?node-id=0-1&t=sdcwvgkuKwNYjulj-0

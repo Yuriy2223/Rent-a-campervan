@@ -30,3 +30,4 @@ const FavoritesCampers = () => {
 };
 
 export default FavoritesCampers;
+

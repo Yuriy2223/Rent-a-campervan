@@ -23,7 +23,8 @@
 }
 
 .btnReset {
-  padding: 16px 68px;
+  padding: 16px 66px;
+  background: rgb(243, 151, 151);
 }
 
 .btnSearch:hover,
