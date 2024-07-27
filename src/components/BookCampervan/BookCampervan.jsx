@@ -94,6 +94,7 @@ const BookCampervan = () => {
               className={css.calendarBtn}
               type="button"
               onClick={handleCalendarToggle}
+              title="Choose a date"
             >
               <Icons
                 className={css.calendarIcon}
@@ -117,7 +118,7 @@ const BookCampervan = () => {
             <FormError name="comment" />
           </div>
 
-          <button className={css.button} type="submit">
+          <button className={css.button} type="submit" title="Submit the form">
             Send
           </button>
         </Form>

@@ -71,7 +71,7 @@ const CatalogItem = ({ camper }) => {
           <h2 className={css.title}>{name}</h2>
           <p className={css.headerContent}>
             €{price}.00
-            <button onClick={handleAddFavorite} className={css.addFavorite}>
+            <button onClick={handleAddFavorite} className={css.addFavorite} title="Choosing a favorite camper">
               <Icons
                 width={24}
                 height={24}
@@ -84,7 +84,7 @@ const CatalogItem = ({ camper }) => {
         <RateLocation rating={rating} reviews={reviews} location={location} />
         <p className={css.description}>{description}</p>
         <CatalogListFeatures camper={camper} />
-        <button className={css.button} onClick={openModal}>
+        <button className={css.button} onClick={openModal} title="More details">
           Show more
         </button>
         {isModalOpen && (

@@ -80,13 +80,14 @@ const CatalogSearchForm = () => {
           />
           <CatalogSearchFormType camperTypes={camperTypes} values={values} />
           <div className={css.containerBtn}>
-            <button type="submit" className={css.btnSearch}>
+            <button type="submit" className={css.btnSearch} title="Submit the search form">
               Search
             </button>
             <button
               type="button"
               className={css.btnReset}
               onClick={() => handleReset(resetForm)}
+              title="Reset filters"
             >
               Reset
             </button>

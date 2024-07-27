@@ -23,6 +23,7 @@
 .paginationBtn:focus {
   border: 1px solid var(--button);
   color: var(--button);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .paginationPage {
@@ -43,4 +44,5 @@
   background-color: aliceblue;
   color: var(--main);
   cursor: not-allowed; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
 }

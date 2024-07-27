@@ -24,7 +24,8 @@
   border-radius: 10px;
   padding: 18px;
   width: 400px;
-  border: none;
+  border: 1px solid transparent;
+  transition: all 250ms ease-in-out;
   outline: none;
   position: relative;
 }
@@ -42,8 +43,11 @@
 .input:hover,
 .inputComment:hover,
 .inputComment:focus,
-.input:focus {
+.input:focus,
+.dateInput:hover,
+.dateInput:focus {
   color: var(--main);
+  border: 1px solid var(--button);
 }
 
 .dateInputWrapper {
@@ -87,6 +91,7 @@
 .button:hover,
 .button:focus {
   background-color: #d84343;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .relative {
